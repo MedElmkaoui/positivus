@@ -13,7 +13,7 @@ interface Props {
 const ServicesCard = ({title, subTitle, titleBg, img, variant}: Props)=> {
 
     return (
-        <div className={`flex gap-24 items-center justify-between bg-${variant} border border-b-8 rounded-3xl py-8 px-8 lg:px-12`}>
+        <div className={`relative flex gap-24 items-center justify-between bg-${variant} border border-b-8 rounded-3xl py-8 px-8 lg:px-12`}>
             <div className="flex flex-col justify-between h-[25vh]">
                 <div>
                     <h1 className={`w-fit z-99 bg-${titleBg} text-lg text-nowrap p-1 font-semibold rounded-md`}>{title}</h1>
@@ -24,8 +24,8 @@ const ServicesCard = ({title, subTitle, titleBg, img, variant}: Props)=> {
                     Learn more
                 </button>
             </div>
-            <div>
-                <Image src={`/images/services/${img}`} alt="" width={200} height={20} />
+            <div className="absolute right-5 bottom-12 lg:right-10">
+                <Image src={`/images/services/${img}`} alt="" width={150} height={150} className="w-250 h-250"  />
             </div>
         </div>
     )

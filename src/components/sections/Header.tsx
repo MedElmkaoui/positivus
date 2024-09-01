@@ -4,7 +4,7 @@ import Link from "next/link"
 const Header = ()=> {
 
     return (
-        <header className={`mx-8 lg:mx-auto lg:w-[70%]`}>
+        <header className={`mx-8 lg:mx-auto lg:w-[80%]`}>
             <nav className="mb-2.5 py-2.5 flex justify-between items-center">
                 <Image src={'/images/logo.png'} width={120} height={80} alt="logo"  />
                 <ul className="hidden md:flex items-center gap-5">
