@@ -4,9 +4,9 @@ import Heading from "../Heading"
 
 const CaseStudies = ()=> {
     return (
-        <div className={`lg:mx-auto mx-8 my-24 lg:w-[80%]`}>
+        <div className={`lg:mx-auto mx-8 my-12 lg:w-[80%]`}>
             <Heading title="Case Studies" subTitle="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"/>
-            <div className="my-36 relative rounded-3xl grid grid-cols-11 items-center gap-8 bg-black p-8 lg:p-12">
+            <div className="my-12 relative rounded-3xl grid lg:grid-cols-11 items-center gap-8 bg-black p-8 lg:p-12">
                 <div className="lg:h-[20vh] col-span-3">
                     <p className="my-2.5 text-white text-sm font-light">For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
                     <button className="text-primary flex items-center gap-2.5"><span>Learn more </span>  <RiArrowRightUpLine /> </button>

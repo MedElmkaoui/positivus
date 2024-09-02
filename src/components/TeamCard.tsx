@@ -15,7 +15,7 @@ const TeamCard = ({img, name, status, description}: Props)=> {
 
     return (
         <div className={`p-12 rounded-3xl border border-b-8 border-black`}>
-            <div className="mb-8 pb-5 border-b flex items-start gap-8">
+            <div className="mb-8 pb-5 border-b flex justify-between items-start gap-8">
                 <div className="flex items-end gap-8">
                     <Image src={img} alt="" height={80} width={80} />
                     <div>

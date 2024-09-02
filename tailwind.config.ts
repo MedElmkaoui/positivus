@@ -20,7 +20,8 @@ const config: Config = {
       colors : {
         primary :'#B9FF66',
         black :'#191A23',
-        gray : '#F3F3F3'
+        gray : '#F3F3F3',
+        darkgray : '#292A32',
       },
       fontSize : {
         xs: ['12px', '14px'],

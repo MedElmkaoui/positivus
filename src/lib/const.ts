@@ -40,3 +40,43 @@ export const team = [
     {id: '05', img: '/images/team/05.png', name :'Brian Williams', status : 'Social Media Specialist', description: '4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement'},
     {id: '06', img: '/images/team/06.png', name :'Sarah Kim', status : 'Content Creator', description: "2+ years of experience in writing and editing Skilled in creating compelling, SEO-optimized content for various industries"},
 ]
+
+
+export const testimonials = [
+    {
+        id: '01',
+        name : 'John Smith',
+        status : 'Marketing Director at XYZ Corp',
+        description : '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."'
+    },
+    {
+        id: '02',
+        name : 'John Smith',
+        status : 'Marketing Director at XYZ Corp',
+        description : '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."'
+    },
+    {
+        id: '03',
+        name : 'John Smith',
+        status : 'Marketing Director at XYZ Corp',
+        description : '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."'
+    },
+    {
+        id: '04',
+        name : 'John Smith',
+        status : 'Marketing Director at XYZ Corp',
+        description : '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."'
+    },
+    {
+        id: '04',
+        name : 'John Smith',
+        status : 'Marketing Director at XYZ Corp',
+        description : '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."'
+    },
+    {
+        id: '04',
+        name : 'John Smith',
+        status : 'Marketing Director at XYZ Corp',
+        description : '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."'
+    },
+]

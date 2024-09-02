@@ -4,4 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@layer base {
+    .traingle {
+        @apply before:h-10 before:w-10 before:border before:rotate-45 before:bg-black before:-bottom-5 before:border-t-0 before:border-l-0 before:left-12 before:border-primary before:absolute;
+    }
+}
