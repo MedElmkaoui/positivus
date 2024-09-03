@@ -1,26 +1,21 @@
 import { RiArrowRightUpLine } from "react-icons/ri"
 import Heading from "../Heading"
+import { caseStadies } from "@/lib/const"
 
 
 const CaseStudies = ()=> {
     return (
-        <div className={`lg:mx-auto mx-8 my-12 lg:w-[80%]`}>
+        <div id="case" className={`lg:mx-auto mx-8 my-12 lg:w-[80%]`}>
             <Heading title="Case Studies" subTitle="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"/>
-            <div className="my-12 relative rounded-3xl grid lg:grid-cols-11 items-center gap-8 bg-black p-8 lg:p-12">
-                <div className="lg:h-[20vh] col-span-3">
-                    <p className="my-2.5 text-white text-sm font-light">For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
-                    <button className="text-primary flex items-center gap-2.5"><span>Learn more </span>  <RiArrowRightUpLine /> </button>
-                </div>
-                <hr className="rotate-90 text-white col-span-1 w-full" />
-                <div className="lg:h-[20vh] col-span-3">
-                    <p className="my-2.5 text-white text-sm font-light">For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.</p>
-                    <button className="text-primary flex items-center gap-2.5"><span>Learn more </span>  <RiArrowRightUpLine /> </button>
-                </div>
-                <hr className="rotate-90 text-white col-span-1 w-full" />
-                <div className="lg:h-[20vh] col-span-3">
-                    <p className="my-2.5 text-white text-sm font-light">For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.</p>
-                    <button className="text-primary flex items-center gap-2.5"><span>Learn more </span>  <RiArrowRightUpLine /> </button>
-                </div>
+            <div className="my-12 relative rounded-3xl grid lg:grid-cols-3 items-center gap-8 bg-black p-8 lg:p-12">
+                {
+                    caseStadies.map((ele)=> (
+                        <div key={ele.id} className="lg:h-[20vh] border-b lg:border-r border-gray lg:last:border-r-0 lg:border-b-0 last:border-b-0 pb-12 lg:pb-0">
+                            <p className="my-2.5 text-white text-sm font-light"> {ele.description} </p>
+                            <button className="text-primary flex items-center gap-2.5"><span>Learn more </span>  <RiArrowRightUpLine /> </button>
+                        </div>
+                    ))
+                }
             </div>
         </div>
     )

@@ -13,7 +13,7 @@ const OurProcess = ()=> {
             <div className="my-12 space-y-5">
                 {
                     workingProcess.map((ele, index)=> (
-                        <ProcessCard expand={expand == index}  nb={ele.nb} title={ele.title} description={ele.description} >
+                        <ProcessCard key={ele.id} expand={expand == index}  nb={ele.nb} title={ele.title} description={ele.description} >
                             <button 
                                 onClick={()=> setExpand(index)}
                                 className="flex items-center justify-center h-10 w-10 bg-gray border rounded-full"
@@ -25,7 +25,6 @@ const OurProcess = ()=> {
                 }
                
             </div>
-            
         </div>
     )
 }

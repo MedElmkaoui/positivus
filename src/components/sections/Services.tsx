@@ -2,6 +2,7 @@ import Image from "next/image"
 import Heading from "../Heading"
 import ServicesCard from "../ServicesCard"
 import BlackBtn from "../BlackBtn"
+import { services } from "@/lib/const"
 
 
 const Services = ()=> {
@@ -9,12 +10,11 @@ const Services = ()=> {
         <div className={`lg:mx-auto mx-2.5 my-24 lg:w-[80%]`}>
             <Heading title="Services" subTitle="At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:"/>
             <div className="grid lg:grid-cols-2 gap-10 my-12">
-                <ServicesCard img="seo.png" title="Search engine" subTitle="optimization" titleBg="primary" variant="gray" />
-                <ServicesCard img="Pay-per-click.png" title="Pay-per-click" subTitle="advertising" titleBg="gray" variant="primary" />
-                <ServicesCard img="Social-Media.png" title="Social Media" subTitle="Marketing" titleBg="gray" variant="black" />
-                <ServicesCard img="Email-Marketing.png" title="Email" subTitle="Marketing" titleBg="primary" variant="gray" />
-                <ServicesCard img="Content-Creation.png" title="Content" subTitle="Creation" titleBg="gray" variant="primary" />
-                <ServicesCard img="Analytics.png" title="Analytics and " subTitle="Tracking" titleBg="primary" variant="black" />
+                {
+                    services.map((ele)=> (
+                        <ServicesCard key={ele.id} img={ele.img} title={ele.title} subTitle={ele.subTitle} titleBg={ele.titleBg} variant={ele.variant} />
+                    ))
+                }
             </div>
             <div className="my-36 relative rounded-3xl bg-gray p-8 lg:p-12">
                 <div className="lg:h-[20vh] flex flex-col justify-between">

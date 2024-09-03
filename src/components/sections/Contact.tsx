@@ -12,13 +12,13 @@ const Contact = ()=> {
                 <div className="lg:w-1/2">
                     <form action="" className="space-y-3">
                         <div className="flex gap-12">
-                            <div className="flex gap-3.5">
-                                <input type="radio" name="" id="" checked className="h-5 w-5 " />
-                                <span className="">Say Hi</span>
+                            <div className="flex items-center gap-3.5">
+                                <input type="radio" name="" id="" className="h-5 w-5 " />
+                                <span className="text-nowrap text-sm lg:text-base">Say Hi</span>
                             </div>
-                            <div className="flex gap-3.5">
+                            <div className="flex items-center gap-3.5">
                                 <input type="radio" name="" id=""  className="h-5 w-5 "/>
-                                <span className="">Get a Quoat</span>
+                                <span className="text-nowrap text-sm lg:text-base">Get a Quoat</span>
                             </div>
                         </div>
                         <div className="flex flex-col gap-2.5">

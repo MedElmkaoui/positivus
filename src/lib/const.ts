@@ -1,5 +1,33 @@
 
 
+export const navigation = [
+    {
+        id: 0,
+        label : 'About us',
+        link : '#aboutUs',
+    },
+    {
+        id: 1,
+        label : 'Services',
+        link : '#services',
+    },
+    {
+        id: 2,
+        label : 'Use Cases',
+        link : '#useCases',
+    },
+    {
+        id: 3,
+        label : 'Pricing',
+        link : '#pricing',
+    },
+    {
+        id: 4,
+        label : 'Blog',
+        link : '#blog',
+    },
+]
+
 export const sponsors = [
     {id: '01', img: '/images/sponsors/amazon.png'},
     {id: '02', img: '/images/sponsors/dribble.png'},
@@ -67,16 +95,72 @@ export const testimonials = [
         status : 'Marketing Director at XYZ Corp',
         description : '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."'
     },
+]
+
+
+export const caseStadies = [
     {
-        id: '04',
-        name : 'John Smith',
-        status : 'Marketing Director at XYZ Corp',
-        description : '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."'
+        id: 0,
+        description : 'For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.'
     },
     {
-        id: '04',
-        name : 'John Smith',
-        status : 'Marketing Director at XYZ Corp',
-        description : '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."'
+        id: 1,
+        description : 'For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.'
+    },
+    {
+        id: 2,
+        description : 'For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.'
     },
 ]
+
+export const services = [
+    {
+        id: 0, 
+        img: 'seo.png',
+        title : 'Search engine',
+        subTitle : 'optimization',
+        titleBg : 'primary',
+        variant : 'gray'
+    },
+    {
+        id: 1, 
+        img: 'Pay-per-click.png',
+        title : 'Pay-per-click',
+        subTitle : 'advertising',
+        titleBg : 'primary',
+        variant : 'gray'
+    },
+    {
+        id: 2, 
+        img: 'Social-Media.png',
+        title : 'Social Media',
+        subTitle : 'Marketing',
+        titleBg : 'gray',
+        variant : 'black'
+    },
+    {
+        id: 3, 
+        img: 'Email-Marketing.png',
+        title : 'Email',
+        subTitle : 'Marketing',
+        titleBg : 'primary',
+        variant : 'gray'
+    },
+    {
+        id: 4, 
+        img: 'Content-Creation.png',
+        title : 'Content',
+        subTitle : 'Creation',
+        titleBg : 'gray',
+        variant : 'primary'
+    },
+    {
+        id: 5, 
+        img: 'Analytics.png',
+        title : 'Analytics and ',
+        subTitle : 'Tracking',
+        titleBg : 'primary',
+        variant : 'black'
+    },
+]
+
